@@ -19,6 +19,7 @@ EveryoneDex implements a fully automated pipeline that:
 The functional connectome provided as input must satisfy the following constraints:
 
 * **Parcellation**: the connectome must be defined on the exact node set specified in `MEG_Parcel_EveryOne`, provided in `.xls` formats;
+* **Frequeny Band**: the connectome must be computed in the alpha band (8-15 Hz);
 * **Directionality**: the matrix must be undirected (symmetric);
 * **Edge weights**: edge values must represent functional connectivity (e.g., Pearson correlation coefficients);
 * **Format**: the connectome must be provided as an *N* × *N* matrix consistent with the supplied parcel definition.
